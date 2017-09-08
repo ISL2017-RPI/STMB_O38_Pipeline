@@ -9,7 +9,7 @@ docker build -t stmb38 ./
 
 Then, you can run the pipeline script in the following way:
 
-docker run stmb38 python O38_STMB_srapper.py "trainData.csv" "trainTargets.csv"
+docker run stmb38 python O38_STMB_wrapper.py "trainData.csv" "trainTargets.csv"
 
 The output is the selected features stored in a csv file
 
