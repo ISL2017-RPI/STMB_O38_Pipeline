@@ -9,8 +9,8 @@ def STMB(data_file, target_file):
 
 
 if __name__ == "__main__":
-    data = sys.argv[1]
-    target = sys.argv[2]
+    data = 'trainData.csv'
+    target = 'trainTargets.csv'
     selected_feature = np.array(STMB(data, target), dtype=np.int16)
     np.savetxt('Features_O38_STMB.csv', selected_feature, delimiter=',')
     print selected_feature
